@@ -19,14 +19,23 @@
 <body>
     <!-- Definisco il container myApp -->
     <div id="myapp">
-        <ul v-if="allEmailsGenerated">
-            <li v-for="email in emailList" :key="email">{{email}}</li>
-        </ul>
+
+        <!-- Inserisco il titolo della pagina -->
+        <div id="title">
+            <h1>API REQUEST</h1>
+            <h5>I try to take the email from a fake API created by Boolean</h5>
+        </div>
+
+        <!-- Definisco il main dove inserirò le email prese dall'API -->
+        <main>
+            <div class="container">
+                <ul class="email-list" v-if="allEmailsGenerated">
+                    <li class="email-item" v-for="email in emailList" :key="email">{{email}}</li>
+                </ul>
+            </div>
+        </main>
 
     </div>
-
-
-
 
     <!-- Inserisco la CDN di Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

@@ -4,3 +4,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#myapp{
+    height: 100vh;
+    background:linear-gradient(to right, #10b318, #97f59c);
+    text-align: center;
+}
+
+#title{
+    background-color: whitesmoke;
+    color: #10b318;
+    padding: 25px 0;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+
+#title h1{
+    font-size: 60px;
+}
+
+main{
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.email-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.email-item {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}

@@ -24,7 +24,6 @@ createApp({
                     this.emailList.push(response.data.response)
                     if (this.emailList.length === 10) {
                         this.allEmailsGenerated = true;
-                        console.log(this.emailList);
                     }
                 });
 
