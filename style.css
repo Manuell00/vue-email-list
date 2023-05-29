@@ -1,17 +1,18 @@
 /* Regole GENERALI */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#myapp{
+#myapp {
+    position: relative;
     height: 100vh;
-    background:linear-gradient(to right, #10b318, #97f59c);
+    background: linear-gradient(to right, #10b318, #97f59c);
     text-align: center;
 }
 
-#title{
+#title {
     background-color: whitesmoke;
     color: #10b318;
     padding: 25px 0;
@@ -20,11 +21,13 @@
     margin: 0 auto;
 }
 
-#title h1{
+#title h1 {
     font-size: 60px;
+    text-shadow: 1px 1px 1px #888;
+
 }
 
-main{
+main {
     padding: 25px 0;
     display: flex;
     justify-content: center;
@@ -49,4 +52,35 @@ main{
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.email-item:hover {
+    background-color: #ddd;
+}
+
+
+/* Inserisco la modalità darkmode per cambiare a piacimento il bg */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+#darkButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #888;
+    transition: background-color 0.3s ease;
+}
+
+#darkButton:hover {
+    background-color: green;
 }
