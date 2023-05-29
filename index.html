@@ -19,8 +19,8 @@
 <body>
     <!-- Definisco il container myApp -->
     <div id="myapp">
-        <ul>
-            <li v-for="email in emailList">{{email}}</li>
+        <ul v-if="allEmailsGenerated">
+            <li v-for="email in emailList" :key="email">{{email}}</li>
         </ul>
 
     </div>
