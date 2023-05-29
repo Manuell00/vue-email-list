@@ -21,9 +21,11 @@
     <div id="myapp">
 
         <!-- Inserisco il titolo della pagina -->
-        <div id="title">
-            <h1>API REQUEST</h1>
-            <h5>I try to take the email from a fake API created by Boolean</h5>
+        <div id="title" class="bg">
+            <div>
+                <h1>API REQUEST</h1>
+                <h5>I try to take the email from a fake API created by Boolean</h5>
+            </div>
         </div>
 
         <!-- Definisco il main dove inserirò le email prese dall'API -->
@@ -35,8 +37,10 @@
             </div>
         </main>
 
-        <!-- Inserisco il bottone per la darkMode -->
-        <button id="darkButton">Dark Mode</button>
+        <footer>
+            <!-- Inserisco il bottone per la darkMode -->
+            <button id="darkButton" @click="toggleMode">Dark Mode</button>
+        </footer>
     </div>
 
     <!-- Inserisco la CDN di Vue -->
