@@ -31,7 +31,7 @@ createApp({
             .then(
                 response => {
                     this.emailList.push(response.data.response)
-                    if (this.emailList.length === 10) {
+                    if (i === 9) {
                         this.allEmailsGenerated = true;
                     }
                 });
